@@ -41,7 +41,7 @@ const sketch = ({ context, canvas, width, height }) => {
     ior: 1.5,
     reflectivity: 0,
     thickness: 1,
-    envMapIntensity: 0.1,
+    envMapIntensity: 0.7,
     clearcoat: 0,
     clearcoatRoughness: 0,
     normalScale: 1,
@@ -74,6 +74,7 @@ const sketch = ({ context, canvas, width, height }) => {
   controls.enableZoom = true;
   controls.minDistance = 10;
   controls.maxDistance = 50;
+  controls.padding = false;
   const scene = new THREE.Scene();
 
   const renderPass = new THREE.RenderPass(scene, camera);
