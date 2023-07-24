@@ -74,7 +74,7 @@ const sketch = ({ context, canvas, width, height }) => {
   controls.enableZoom = true;
   controls.minDistance = 10;
   controls.maxDistance = 50;
-  controls.enablePadding = false;
+  controls.enablePan = false;
   const scene = new THREE.Scene();
 
   const renderPass = new THREE.RenderPass(scene, camera);
@@ -113,7 +113,7 @@ const sketch = ({ context, canvas, width, height }) => {
   );
 
   const hdrLightingEquirect = new THREE.RGBELoader().load(
-    "src/hdr4.hdr",
+    "src/hdr3.hdr",
     () => {
       hdrLightingEquirect.mapping = THREE.EquirectangularReflectionMapping;
     }
