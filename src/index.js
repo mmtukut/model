@@ -74,7 +74,7 @@ const sketch = ({ context, canvas, width, height }) => {
   controls.enableZoom = true;
   controls.minDistance = 10;
   controls.maxDistance = 50;
-  controls.padding = false;
+  controls.enablePadding = false;
   const scene = new THREE.Scene();
 
   const renderPass = new THREE.RenderPass(scene, camera);
