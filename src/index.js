@@ -66,7 +66,7 @@ const sketch = ({ context, canvas, width, height }) => {
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.enabled = !options.enableSwoopingCamera;
   controls.autoRotate = true;
-  controls.autoRotateSpeed = 9;
+  controls.autoRotateSpeed = 7;
   controls.enableDamping = true;
   controls.dampingFactor = 1.25;
   controls.enableZoom = true;
